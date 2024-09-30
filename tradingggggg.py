@@ -7,11 +7,11 @@ load_dotenv()
 
 # API Info for fetching data, portfolio, etc. from Alpaca
 BASE_URL = os.getenv("BASE_URL")
-APCA_API_KEY_ID = os.getenv("APCA_API_KEY_ID")
-APCA_API_SECRET_KEY = os.getenv("APCA_API_SECRET_KEY")
+ALPACA_API_KEY = os.getenv("ALPACA_API_KEY")
+ALPACA_SECRET_KEY = os.getenv("ALPACA_SECRET_KEY")
 
 # Initialize Alpaca API
-api = tradeapi.REST(key_id=APCA_API_KEY_ID, secret_key=APCA_API_SECRET_KEY,
+api = tradeapi.REST(key_id=ALPACA_API_KEY, secret_key=ALPACA_SECRET_KEY,
                     base_url=BASE_URL, api_version='v2')
 
 # Set OpenAI API key
