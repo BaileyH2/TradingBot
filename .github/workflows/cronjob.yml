@@ -4,7 +4,7 @@ on:
   push:   # This job will run every time a push is made to the repository
   schedule:
     # This cron job runs every hour, you can modify it as needed
-    - cron: '45 10 * * *'
+    - cron: '03 20 * * *'
 
 jobs:
   execute-trading-script:
