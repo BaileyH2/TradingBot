@@ -1,7 +1,5 @@
 import alpaca_trade_api as tradeapi
 import openai
-import logging
-import requests
 from dotenv import load_dotenv
 import os
 
