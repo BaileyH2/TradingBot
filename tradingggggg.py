@@ -22,7 +22,7 @@ def get_stock_symbol():
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": "Generate a stock symbol for a popular company. Find 10 different ones and only choose 1 of them. Give only one 4 letter symbol. Do not make it AAPL."}
+            {"role": "user", "content": "List a single 4 letter stock symbol. Do not give me anything else but those 4 letters. Do not make it AAPL."}
         ]
     )
     stock_symbol = response.choices[0].message['content'].strip()
